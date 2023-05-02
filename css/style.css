@@ -76,6 +76,30 @@ body {
     width: 2rem;
     fill: var(--color-grey-dark-3); }
 
+.side-nav {
+  font-size: 1.4rem;
+  list-style: none;
+  margin-top: 3.5rem; }
+  .side-nav__link:link, .side-nav__link:visited {
+    color: var(--color-grey-light-1);
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    padding: 1.5rem 3rem;
+    display: flex;
+    align-items: center; }
+  .side-nav__icon {
+    height: 1.75rem;
+    width: 1.75rem;
+    margin-right: 2rem;
+    fill: var(--color-grey-light-1); }
+
+.legal {
+  padding: 2.5rem;
+  font-size: 1.2rem;
+  color: var(--color-grey-light-4);
+  text-align: center; }
+
 .user-nav {
   display: flex;
   align-items: center;
@@ -133,8 +157,13 @@ body {
 
 .hotel-overview {
   background-color: var(--color-white);
+  background-color: orangered;
+  height: 100rem;
   flex: 1; }
 
 .sidebar {
   background-color: var(--color-grey-dark-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   flex: 0 0 18%; }
