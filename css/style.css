@@ -11,6 +11,7 @@
   --color-primary-light: #ff3366;
   --color-primary-dark: #ba265d;
   --color-white: #fff;
+  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
   --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3); }
 
 *,
@@ -244,6 +245,20 @@ body {
 .content {
   display: flex; }
 
+.description {
+  background-color: var(--color-white);
+  padding: 3rem;
+  box-shadow: var(--shadow-light);
+  flex: 0 0 60%;
+  margin-right: 4.5rem;
+  font-size: 1.4rem; }
+
+.detail {
+  display: flex;
+  padding: 4.5rem;
+  background-color: var(--color-grey-light-1);
+  border-bottom: 1px solid var(--color-grey-light-2); }
+
 .header {
   height: 7rem;
   background-color: var(--color-white);
@@ -255,7 +270,6 @@ body {
 
 .hotel-overview {
   background-color: var(--color-white);
-  height: 100rem;
   flex: 1; }
 
 .sidebar {
@@ -264,3 +278,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   flex: 0 0 18%; }
+
+.user-reviews {
+  background-color: yellowgreen;
+  flex: 1; }
