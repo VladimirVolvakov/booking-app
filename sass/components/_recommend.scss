@@ -1,0 +1,19 @@
+.recommend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3rem;
+  color: var(--color-grey-dark-3);
+
+&__photo {
+    height: 4rem;
+    width: 4rem;
+    box-sizing: content-box;
+    border-radius: 50%;
+    border: 3px solid var(--color-white);
+
+    &:not(:last-child) {
+      margin-right: -1.5rem;
+    }
+  }
+}
