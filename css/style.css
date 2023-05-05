@@ -68,6 +68,47 @@ body {
     transform: scale(1);
     box-shadow: none; } }
 
+.cta {
+  padding: 3.5rem 0;
+  text-align: center; }
+  .cta__book-now {
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase; }
+  .cta__btn {
+    position: relative;
+    background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
+    border: none;
+    border-radius: 100px;
+    overflow: hidden;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: var(--color-white);
+    cursor: pointer; }
+    .cta__btn > * {
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      transition: all 0.3s; }
+    .cta__btn--visible {
+      padding: 2rem 7.5rem; }
+    .cta__btn--hidden {
+      position: absolute;
+      left: 0;
+      top: -100%;
+      padding: 2rem 0rem; }
+    .cta__btn:hover {
+      background-image: linear-gradient(to left, var(--color-primary-light), var(--color-primary-dark)); }
+    .cta__btn:hover .cta__btn--visible {
+      transform: translateY(100%); }
+    .cta__btn:hover .cta__btn--hidden {
+      top: 0; }
+    .cta__btn:focus {
+      outline: none;
+      animation: 1s pulsation infinite; }
+
 .gallery {
   display: flex; }
   .gallery__photo {
