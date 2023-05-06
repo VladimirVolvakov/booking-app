@@ -4,4 +4,8 @@
   background-color: var(--color-grey-light-1);
   border-bottom: 1px solid var(--color-grey-light-2);
   font-size: 1.4rem;
+
+  @media only screen and (max-width: $tab-portrait) {
+    padding: 3rem;
+  }
 }

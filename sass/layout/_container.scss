@@ -1,6 +1,13 @@
 .container {
+  min-height: 50rem;
   max-width: 120rem;
   margin: 8rem auto;
   background-color: var(--color-grey-light-1);
   box-shadow: var(--shadow-dark);
+
+  @media only screen and (max-width: $tab-landscape) {
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+  }
 }

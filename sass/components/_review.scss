@@ -7,6 +7,11 @@
   display: flex;
   flex-direction: column;
 
+  @media only screen and (max-width: $tab-portrait) {
+    margin-bottom: 3rem;
+    padding: 2rem;
+  }
+
   &::before {
     content: "\201C";
     position: absolute;

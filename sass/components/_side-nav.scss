@@ -3,12 +3,22 @@
   list-style: none;
   margin-top: 3.5rem;
   
+  @media only screen and (max-width: $tab-portrait) {
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 0;
+  }
+  
 
   &__item {
     position: relative;
 
     &:not(:last-child) {
       margin-bottom: 0.5rem;
+
+      @media only screen and (max-width: $tab-portrait) {
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -65,4 +75,8 @@
   font-size: 1.2rem;
   color: var(--color-grey-light-4);
   text-align: center;
+
+  @media only screen and (max-width: $tab-portrait) {
+    display: none;
+  }
 }

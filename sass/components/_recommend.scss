@@ -16,4 +16,10 @@
       margin-right: -1.5rem;
     }
   }
+
+  &__friends {
+    @media only screen and (max-width: $tab-portrait) {
+      display: flex;
+    }
+  }
 }

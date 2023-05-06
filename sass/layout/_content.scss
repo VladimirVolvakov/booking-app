@@ -1,3 +1,7 @@
 .content {
   display: flex;
+
+  @media only screen and (max-width: $tab-portrait) {
+    flex-direction: column;
+  }
 }
