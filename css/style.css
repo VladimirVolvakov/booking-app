@@ -82,6 +82,9 @@ body {
     font-size: 2rem;
     font-weight: 300;
     text-transform: uppercase; }
+    @media only screen and (max-width: 30em) {
+      .cta__book-now {
+        font-size: 1.5rem; } }
   .cta__btn {
     position: relative;
     background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
@@ -93,6 +96,9 @@ body {
     text-transform: uppercase;
     color: var(--color-white);
     cursor: pointer; }
+    @media only screen and (max-width: 30em) {
+      .cta__btn {
+        font-size: 1.25rem; } }
     .cta__btn > * {
       display: inline-block;
       height: 100%;
@@ -100,11 +106,17 @@ body {
       transition: all 0.3s; }
     .cta__btn--visible {
       padding: 2rem 7.5rem; }
+      @media only screen and (max-width: 30em) {
+        .cta__btn--visible {
+          padding: 1.25rem 6rem; } }
     .cta__btn--hidden {
       position: absolute;
       left: 0;
       top: -100%;
       padding: 2rem 0rem; }
+      @media only screen and (max-width: 30em) {
+        .cta__btn--hidden {
+          padding: 1.25rem 0rem; } }
     .cta__btn:hover {
       background-image: linear-gradient(to left, var(--color-primary-light), var(--color-primary-dark)); }
     .cta__btn:hover .cta__btn--visible {
@@ -160,6 +172,10 @@ body {
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 0.1rem; }
+    @media only screen and (max-width: 37.5em) {
+      .overview__heading {
+        padding: 1.25rem 2rem;
+        font-size: 1.75rem; } }
   .overview__stars {
     margin-right: auto;
     display: flex;
@@ -184,10 +200,17 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+    @media only screen and (max-width: 37.5em) {
+      .overview__rating {
+        padding: 0 1.5rem; } }
   .overview__rating-average {
     margin-bottom: -0.3rem;
     font-size: 2.25rem;
     font-weight: 300; }
+    @media only screen and (max-width: 37.5em) {
+      .overview__rating-average {
+        font-size: 1.75rem;
+        margin-bottom: 0; } }
   .overview__rating-votes {
     font-size: 0.8rem;
     text-transform: uppercase; }
@@ -225,6 +248,9 @@ body {
     .review {
       margin-bottom: 3rem;
       padding: 2rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .review {
+      width: 100%; } }
   .review::before {
     content: "\201C";
     position: absolute;
@@ -268,6 +294,11 @@ body {
   justify-content: center;
   align-items: center;
   flex: 0 0 40%; }
+  @media only screen and (max-width: 30em) {
+    .search {
+      order: 1;
+      flex: 0 0 100%;
+      background-color: var(--color-grey-light-2); } }
   .search__input {
     width: 90%;
     font-family: inherit;
@@ -343,11 +374,21 @@ body {
     display: flex;
     align-items: center;
     z-index: 10; }
+    @media only screen and (max-width: 37.5em) {
+      .side-nav__link:link, .side-nav__link:visited {
+        flex-direction: column;
+        padding: 0.5rem 2rem; } }
   .side-nav__icon {
     height: 1.75rem;
     width: 1.75rem;
     margin-right: 2rem;
     fill: var(--color-grey-light-1); }
+    @media only screen and (max-width: 37.5em) {
+      .side-nav__icon {
+        height: 1.5rem;
+        width: 1.5rem;
+        margin-right: 0;
+        margin-bottom: 0.5rem; } }
 
 .legal {
   padding: 2.5rem;
@@ -422,6 +463,10 @@ body {
     .description {
       padding: 2rem;
       margin-right: 3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .description {
+      margin-right: 0;
+      margin-bottom: 3rem; } }
 
 .detail {
   display: flex;
@@ -432,6 +477,9 @@ body {
   @media only screen and (max-width: 56.25em) {
     .detail {
       padding: 3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .detail {
+      flex-direction: column; } }
 
 .header {
   height: 7rem;
@@ -441,6 +489,11 @@ body {
   justify-content: space-between;
   align-items: center;
   font-size: 1.4rem; }
+  @media only screen and (max-width: 30em) {
+    .header {
+      height: 11rem;
+      flex-wrap: wrap;
+      align-content: space-around; } }
 
 .hotel-overview {
   background-color: var(--color-white);

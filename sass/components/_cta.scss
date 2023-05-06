@@ -11,6 +11,10 @@
     font-size: 2rem;
     font-weight: 300;
     text-transform: uppercase;
+
+    @media only screen and (max-width: $phone-portrait) {
+      font-size: 1.5rem;
+    }
   }
 
   &__btn {
@@ -29,6 +33,10 @@
     color: var(--color-white);
     cursor: pointer;
 
+    @media only screen and (max-width: $phone-portrait) {
+      font-size: 1.25rem;
+    }
+
     & > * {
       display: inline-block;
       height: 100%;
@@ -38,6 +46,10 @@
 
     &--visible {
       padding: 2rem 7.5rem;
+
+      @media only screen and (max-width: $phone-portrait) {
+        padding: 1.25rem 6rem;
+      }
     }
 
     &--hidden {
@@ -45,6 +57,10 @@
       left: 0;
       top: -100%;
       padding: 2rem 0rem;
+
+      @media only screen and (max-width: $phone-portrait) {
+        padding: 1.25rem 0rem;
+      }
     }
 
     &:hover {

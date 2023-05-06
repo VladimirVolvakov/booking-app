@@ -12,6 +12,10 @@
     padding: 2rem;
   }
 
+  @media only screen and (max-width: $phone) {
+    width: 100%;
+  }
+
   &::before {
     content: "\201C";
     position: absolute;
