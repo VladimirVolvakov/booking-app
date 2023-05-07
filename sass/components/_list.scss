@@ -20,10 +20,17 @@
     width: 1rem;
     margin-right: 0.7rem;
     content: "";
-    background-color: var(--color-primary);
-    mask-image: url(../img/chevron-thin-right.svg);
-    -webkit-mask-image: url(../img/chevron-thin-right.svg);
-    mask-size: cover;
-    -webkit-mask-size: cover;
+
+    background-image: url(../img/chevron-thin-right.svg);
+    background-size: cover;
+
+    @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+      background-color: var(--color-primary);
+      mask-image: url(../img/chevron-thin-right.svg);
+      -webkit-mask-image: url(../img/chevron-thin-right.svg);
+      mask-size: cover;
+      -webkit-mask-size: cover;
+      background-image: none;
+    }
   }
 }
